@@ -75,9 +75,19 @@ console.log(male);
 
 let characterMass=[];
 characters.forEach(weghit=>{
-    heighinM=weghit[1]/0.1;
+    heighinM=weghit[1]/100;
     characterMass.push(weghit[3]/(heighinM*heighinM))
 });
 
 console.log(characterMass.sort());
 
+console.log(allHeightArray.sort());
+
+console.log(characterMass.map( mass =>{
+    if(mass>40){
+        mass=true;
+    }
+    else{
+        mass=false;
+    }
+}))
