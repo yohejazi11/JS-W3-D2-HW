@@ -85,9 +85,9 @@ console.log(allHeightArray.sort());
 
 console.log(characterMass.map( mass =>{
     if(mass>40){
-        mass=true;
+        return mass=true;
     }
     else{
-        mass=false;
+        return mass=false;
     }
 }))
