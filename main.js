@@ -43,39 +43,41 @@ characters = [
 let allNamesArray=[];
 
 characters.forEach(element => {
-    allNamesArray.push(element[0])
+    allNamesArray.push(element[0]);
 });
 
-console.log("the all names is : ")
+console.log("the all names is : ");
 console.log(allNamesArray);
 
 
 let allHeightArray=[];
 let totalheights=0;
 characters.forEach(element => {
-    allHeightArray.push(element[1])
+    allHeightArray.push(element[1]);
     totalheights+=element[1];
 });
 
-console.log("the all heights is : ")
+console.log("the all heights is : ");
 console.log(allHeightArray);
 
 
-console.log("the total all heights is : ")
+console.log("the total all heights is : ");
 console.log(totalheights);
 
 
 let LessH=[];
-LessH=characters.filter(character => character[1]<200)
+LessH=characters.filter(character => character[1]<200);
 console.log(LessH);
 
 let male=[];
-male=characters.filter(character => character[2]=="male")
+male=characters.filter(character => character[2]=="male");
 console.log(male);
 
 let characterMass=[];
 characters.forEach(weghit=>{
-    characterMass.push(characters[3]/(characters[1]*characters[1]))
+    heighinM=weghit[1]/0.1;
+    characterMass.push(weghit[3]/(heighinM*heighinM))
 });
 
-console.log(characterMass);
+console.log(characterMass.sort());
+
