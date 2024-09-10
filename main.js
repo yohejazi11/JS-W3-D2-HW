@@ -72,3 +72,10 @@ console.log(LessH);
 let male=[];
 male=characters.filter(character => character[2]=="male")
 console.log(male);
+
+let characterMass=[];
+characters.forEach(weghit=>{
+    characterMass.push(characters[3]/(characters[1]*characters[1]))
+});
+
+console.log(characterMass);
